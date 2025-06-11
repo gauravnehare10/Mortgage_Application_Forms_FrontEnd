@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import useAuthStore from '../../../../utils/authStore';
 
-const API_URL = 'https://mortgage-application-form-backend.onrender.com/mortgage/applicants';
+const API_URL = 'http://127.0.0.1:8000/mortgage/applicants';
 
 const ApplicantDetails = () => {
   const [applicants, setApplicants] = useState([]);

@@ -12,7 +12,7 @@ const FloatingProfile = ({ onClose }) => {
   useEffect(() => {
     const access_token = getAccessToken();
     axios
-      .get('https://mortgage-application-form-backend.onrender.com/user/me', {
+      .get('http://127.0.0.1:8000/user/me', {
         headers: {
           Authorization: `Bearer ${access_token}`,
         },

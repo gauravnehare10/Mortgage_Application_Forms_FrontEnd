@@ -24,7 +24,7 @@ const Login = () => {
 
         setError('');
         setSuccess('');
-        const endpoint = "https://mortgage-application-form-backend.onrender.com/token"
+        const endpoint = "http://127.0.0.1:8000/token"
         axios.post(endpoint, {
             username: username.toLowerCase(),
             password: password

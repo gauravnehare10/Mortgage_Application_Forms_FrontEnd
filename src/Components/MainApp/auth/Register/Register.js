@@ -27,7 +27,7 @@ const Register = () => {
 
         setError('');
         setSuccess('');
-        const endpoint = "https://mortgage-application-form-backend.onrender.com/register"
+        const endpoint = "http://127.0.0.1:8000/register"
         axios.post(endpoint, {
             username: username.toLowerCase(),
             name: name,

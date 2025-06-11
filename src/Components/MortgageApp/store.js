@@ -8,7 +8,7 @@ const useFormStore = create((set, get) => ({
     try {
       const accessToken = useAuthStore.getState().getAccessToken();
       const response = await fetch(
-        `https://mortgage-application-form-backend.onrender.com/mortgage/get-form-data/${formName}/${applicantId}`,
+        `http://127.0.0.1:8000/mortgage/get-form-data/${formName}/${applicantId}`,
         {
           headers: {
             accept: 'application/json',
@@ -39,7 +39,7 @@ const useFormStore = create((set, get) => ({
     try {
       const accessToken = useAuthStore.getState().getAccessToken();
       const response = await fetch(
-        'https://mortgage-application-form-backend.onrender.com/mortgage/save-form-data',
+        'http://127.0.0.1:8000/mortgage/save-form-data',
         {
           method: 'POST',
           headers: {
