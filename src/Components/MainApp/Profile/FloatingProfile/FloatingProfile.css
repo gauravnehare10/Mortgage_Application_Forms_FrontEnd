@@ -1,0 +1,21 @@
+/* FloatingProfileCard.css */
+.floating-card {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 280px;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 1050;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.floating-card .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
